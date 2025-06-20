@@ -26,6 +26,7 @@ infraestructura-aws-secretos-para-contar/
 │       ├── variables.tf
 │       ├── outputs.tf
 │       └── user_data_frontend.sh
+    │
     └── security_group/
 │       ├── main.tf
 │       ├── variables.tf
