@@ -21,12 +21,12 @@ infraestructura-aws-secretos-para-contar/
 │   │   ├── outputs.tf
 │   │   └── user_data_backend.sh
 │   │
-│   └── ec2_frontend/
-│       ├── main.tf
-│       ├── variables.tf
-│       ├── outputs.tf
-│       └── user_data_frontend.sh
-    │
+    ├── ec2_frontend/
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   ├── outputs.tf
+│   │   └── user_data_frontend.sh
+│   │
     └── security_group/
 │       ├── main.tf
 │       ├── variables.tf
