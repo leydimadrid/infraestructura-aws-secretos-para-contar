@@ -4,6 +4,7 @@ module "ec2_backend_instance" {
 
 module "ec2_frontend_instance" {
   source = "./modules/ec2_frontend"
+  ami_front_id = var.ami_front_id
 }
 
 module "my_sg" {

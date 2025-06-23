@@ -1,3 +1,3 @@
 ami_back_id=""
-ami_front_id=""
+ami_front_id="ami-06971c49acd687c30"
 vpc_id=""
