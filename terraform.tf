@@ -1,4 +1,9 @@
 terraform {
+  backend "s3" {
+    bucket = "terraform-nodo-tesla"
+    key    = "grupo3/terraform.tfstate"
+    region = "us-east-2"
+  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"

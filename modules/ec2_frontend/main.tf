@@ -13,6 +13,6 @@ sudo dnf install -y nodejs
 EOF
   
   tags = {
-    Name = "instance-cloud3-${count.index + 1}"
+    Name = "instance-${count.index + 1}-cloud3"
   }
 }

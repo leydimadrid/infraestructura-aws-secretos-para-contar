@@ -6,5 +6,5 @@ module "ec2_frontend_instance" {
 
 module "my_sg" {
   source  = "./modules/security_group"
-  puertos = [22, 3000, 5000]  # SSH, frontend, backend
+  puertos = [22, 3000, 5000, 5173]  # SSH, frontend, backend
 }
