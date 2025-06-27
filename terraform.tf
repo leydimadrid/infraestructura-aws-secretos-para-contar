@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "terraform-nodo-tesla"
+    bucket = "terraform-nodo"
     key    = "grupo3/terraform.tfstate"
     region = "us-east-2"
   }
