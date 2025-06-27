@@ -1,6 +1,8 @@
 ami_back_id="ami-0c803b171269e2d72"
 ami_front_id="ami-06971c49acd687c30"
 vpc_id="vpc-62cb4009"
+instance_type = "t2.micro"
+region       = "us-east-2"
 key_name     = "key_pair.pem"
 git_repo_url = "https://github.com/leydimadrid/secretos-para-contar.git"
 instance_type = "t2.micro"
