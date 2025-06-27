@@ -4,6 +4,16 @@ module "ec2_frontend_instance" {
   security_group_id = module.my_sg.security_group_id
 }
 
+module "ec2_backend_instance" {
+  source = "./modules/ec2_backend"
+  ami_back_id = var.ami_back_id
+  instance_type = var.instance_type
+  key_name = var.key_name
+  git_repo_url = var.git_repo_url
+  security_group_id = module.my_sg.security_group_id
+  region = var.region
+} 
+
 module "my_sg" {
   source  = "./modules/security_group"
   puertos = [22, 3000, 5000, 5173]  # SSH, frontend, backend
