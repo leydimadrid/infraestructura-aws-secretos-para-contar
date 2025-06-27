@@ -13,6 +13,7 @@ variable "vpc_id" {
   type        = string
 }
 
+
 variable "git_repo_url" {                   
   description = "URL del repositorio Git a clonar"
 }
@@ -22,10 +23,6 @@ variable "instance_type" {
   default     = "t2.micro"
 }
 
-variable "region" {                   
-  description = "Región de AWS donde se desplegará la instancia EC2"
-}
-
 variable "key_name" {
   description = "Nombre de la llave SSH"
 }
@@ -33,4 +30,3 @@ variable "key_name" {
 variable "region" {                   
   description = "Región de AWS donde se desplegará la instancia EC2"
 }
-
