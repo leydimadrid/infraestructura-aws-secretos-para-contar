@@ -12,3 +12,21 @@ variable "vpc_id" {
   description = "VPC ID"
   type        = string
 }
+
+
+
+
+
+
+variable "instance_type" {
+  description = "Tipo de instancia EC2"
+  default     = "t2.micro"
+}
+
+
+
+
+
+variable "region" {                   
+  description = "Región de AWS donde se desplegará la instancia EC2"
+}

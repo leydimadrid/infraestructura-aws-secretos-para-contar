@@ -1,3 +1,7 @@
 ami_back_id=""
 ami_front_id="ami-06971c49acd687c30"
 vpc_id="vpc-62cb4009"
+
+
+instance_type = "t2.micro"
+region       = "us-east-2"
