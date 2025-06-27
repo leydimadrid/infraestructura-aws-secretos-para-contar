@@ -1,6 +1,7 @@
 module "ec2_frontend_instance" {
   source = "./modules/ec2_frontend"
   ami_front_id = var.ami_front_id
+  instance_type = var.instance_type
   security_group_id = module.my_sg.security_group_id
 }
 
