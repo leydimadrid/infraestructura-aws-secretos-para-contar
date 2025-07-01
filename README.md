@@ -9,11 +9,6 @@ Este proyecto crea dos instancias EC2 (una para el frontend Remix y otra para el
 
 ```bash
 infraestructura-aws-secretos-para-contar/
-├── main.tf
-├── variables.tf
-├── outputs.tf
-├── terraform.tfvars
-│
 ├── modules/
 │   ├── ec2_backend/
 │   │   ├── main.tf
@@ -31,6 +26,11 @@ infraestructura-aws-secretos-para-contar/
 │       ├── main.tf
 │       ├── variables.tf
 │       ├── outputs.tf
+├── main.tf
+├── variables.tf
+├── outputs.tf
+├── terraform.tf
+├── terraform.tfvars
 ├── README.md            
 └── .gitignore
 
