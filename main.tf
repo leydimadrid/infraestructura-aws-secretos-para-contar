@@ -13,8 +13,13 @@ module "ec2_backend_instance" {
   security_group_id = module.my_sg.security_group_id
   region = var.region
 } 
-
-module "my_sg" {
+  
+module "sg_frontend" {
   source  = "./modules/security_group"
-  puertos = [22, 3000, 5000, 5173]  # SSH, frontend, backend
+  puertos = [22, 5173]
+}
+
+module "sg_backend" {
+  source  = "./modules/security_group"
+  puertos = [22, 5000]
 }
