@@ -56,9 +56,11 @@ mkdir -p /home/ec2-user/repo/Backend/TeslaACDC.API/uploads/audiolibros/portadasA
 mkdir -p /home/ec2-user/repo/Backend/TeslaACDC.API/uploads/audiolibros/archivos
 
 # Entrar al directorio del proyecto y construir
-cd /home/ec2-user/repo
+cd /home/ec2-user/repo/Backend/TeslaACDC.API
+sudo chown -R ec2-user:ec2-user /home/ec2-user/repo
+chmod -R u+rwX /home/ec2-user/repo
 dotnet restore
 dotnet build
 
-# Ejecutar la app (suponiendo que sea un proyecto ejecutable)
+# Ejecutar la app
 dotnet run --urls=http://0.0.0.0:5000
