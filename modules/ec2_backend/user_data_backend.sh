@@ -10,7 +10,27 @@ sudo yum install -y icu
 
 # Instalar .NET SDK (ejemplo con .NET 7 en Amazon Linux 2)
 sudo rpm -Uvh https://packages.microsoft.com/config/centos/7/packages-microsoft-prod.rpm
-sudo yum install -y dotnet-sdk-7.0
+
+mkdir -p /home/ec2-user/dotnet
+wget https://builds.dotnet.microsoft.com/dotnet/Sdk/9.0.301/dotnet-sdk-9.0.301-linux-x64.tar.gz -O dotnet9.tar.gz
+tar -zxf dotnet9.tar.gz -C /home/ec2-user/dotnet
+
+# Exportar variables para la sesión actual
+export DOTNET_ROOT=/home/ec2-user/dotnet
+export PATH=/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/bin:/home/ec2-user/dotnet
+
+# Agregar las variables al perfil del usuario para que persistan
+echo 'export DOTNET_ROOT=/home/ec2-user/dotnet' >> /home/ec2-user/.bashrc
+echo 'export PATH=/home/ec2-user/dotnet:$PATH' >> /home/ec2-user/.bashrc
+
+# También agregar al perfil del sistema
+echo 'export DOTNET_ROOT=/home/ec2-user/dotnet' | sudo tee -a /etc/environment
+echo 'export PATH=/home/ec2-user/dotnet:$PATH' | sudo tee -a /etc/environment
+
+# Hacer que ec2-user sea el propietario del directorio dotnet
+sudo chown -R ec2-user:ec2-user /home/ec2-user/dotnet
+# Recargar el perfil
+source /home/ec2-user/.bashrc
 
 # Instalar PostgreSQL (cliente y servidor, opcional)
 sudo amazon-linux-extras enable postgresql14
