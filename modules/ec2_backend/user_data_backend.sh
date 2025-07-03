@@ -46,7 +46,14 @@ sudo systemctl start postgresql
 # sudo -u postgres createdb mydb -O myuser
 
 # Clonar el repositorio
-git clone ${var.git_repo_url} /home/ec2-user/repo
+git clone https://github.com/leydimadrid/secretos-para-contar.git /home/ec2-user/repo
+
+# Crear la carpeta de archivos estáticos (rutas relativas desde el proyecto)
+mkdir -p /home/ec2-user/repo/Backend/TeslaACDC.API/uploads/libros/portadas
+mkdir -p /home/ec2-user/repo/Backend/TeslaACDC.API/uploads/libros/pdf
+mkdir -p /home/ec2-user/repo/Backend/TeslaACDC.API/uploads/autores
+mkdir -p /home/ec2-user/repo/Backend/TeslaACDC.API/uploads/audiolibros/portadasAudio
+mkdir -p /home/ec2-user/repo/Backend/TeslaACDC.API/uploads/audiolibros/archivos
 
 # Entrar al directorio del proyecto y construir
 cd /home/ec2-user/repo
