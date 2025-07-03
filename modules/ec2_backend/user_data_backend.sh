@@ -5,6 +5,8 @@ sudo yum update -y
 
 # Instalar dependencias necesarias
 sudo yum install -y git
+sudo yum install -y wget
+sudo yum install -y icu
 
 # Instalar .NET SDK (ejemplo con .NET 7 en Amazon Linux 2)
 sudo rpm -Uvh https://packages.microsoft.com/config/centos/7/packages-microsoft-prod.rpm
