@@ -30,3 +30,7 @@ variable "key_name" {
 variable "region" {                   
   description = "Región de AWS donde se desplegará la instancia EC2"
 }
+variable "public_key_path" {
+  description = "Ruta al archivo de la llave pública SSH"
+  type        = string
+}
