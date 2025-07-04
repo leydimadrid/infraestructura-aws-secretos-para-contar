@@ -22,3 +22,4 @@ variable "git_repo_url" {
 variable "region" {                   
   description = "Región de AWS donde se desplegará la instancia EC2"
 }
+
