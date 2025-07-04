@@ -9,10 +9,10 @@ module "ec2_backend_instance" {
   source = "./modules/ec2_backend"
   ami_back_id = var.ami_back_id
   instance_type = var.instance_type
-  key_name = var.key_name
   git_repo_url = var.git_repo_url
   security_group_id = module.sg_backend.security_group_id
   region = var.region
+  key_name = aws_key_pair.default.key_name
 } 
   
 module "sg_frontend" {
