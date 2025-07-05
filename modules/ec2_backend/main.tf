@@ -7,10 +7,6 @@ resource "aws_instance" "ec2_instance" {
 
   user_data = file("${path.module}/user_data_backend.sh")
 
-  # user_data = templatefile("${path.module}/user_data_backend.sh", {
-  #   git_repo_url = var.git_repo_url
-  # })
-
   user_data_replace_on_change = true
 
   tags = {
