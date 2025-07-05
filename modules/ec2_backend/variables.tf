@@ -15,3 +15,4 @@ variable "instance_type" {
 variable "region" {                   
   description = "Región de AWS donde se desplegará la instancia EC2"
 }
+

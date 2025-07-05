@@ -2,6 +2,7 @@ data "aws_vpc" "default" {
   default = true
 }
 
+
 resource "aws_security_group" "security_group" {
   description = "Security Group parametrizable"
   vpc_id      = data.aws_vpc.default.id
