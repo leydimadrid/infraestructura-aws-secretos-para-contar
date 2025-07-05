@@ -21,13 +21,7 @@ cd repo/Backend
 
 echo "Installing dependencies 📦"
 dotnet restore
+dotnet build
 
-echo "Setting up permissions 🔐"
-chown -R ec2-user:ec2-user /home/ec2-user/repo/Backend
-chmod -R 755 /home/ec2-user/repo/Backend
-
-echo "Building the project 🏗️"
-dotnet build -c Release
-
-echo "Running the application 🚀"
-nohup dotnet run --urls=http://0.0.0.0:5000
+# Ejecutar la app
+dotnet run --urls=http://0.0.0.0:5000

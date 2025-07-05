@@ -18,6 +18,7 @@ echo "Clonando repositorio"
 git clone https://github.com/leydimadrid/secretos-para-contar.git /home/ec2-user/secretos-para-contar
 cd /home/ec2-user/secretos-para-contar/Frontend
 sudo pnpm install
+echo "VITE_API_URL=http://3.140.73.64:5000" > .env
 sudo pnpm build
 
 npm install -g pm2
