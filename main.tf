@@ -11,7 +11,6 @@ module "ec2_backend_instance" {
   instance_type = var.instance_type
   security_group_id = module.sg_backend.security_group_id
   region = var.region
-  key_name = aws_key_pair.default.key_name
 } 
   
 module "sg_frontend" {
