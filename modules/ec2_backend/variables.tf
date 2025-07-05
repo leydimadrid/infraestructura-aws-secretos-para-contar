@@ -12,13 +12,6 @@ variable "instance_type" {
   default     = "t2.micro"
 }
 
-variable "key_name" {
-  description = "Nombre de la llave SSH"
-}
-
-variable "git_repo_url" {                   
-  description = "URL del repositorio Git a clonar"
-}
 variable "region" {                   
   description = "Región de AWS donde se desplegará la instancia EC2"
 }
