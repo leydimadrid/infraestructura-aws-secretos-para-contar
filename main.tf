@@ -34,4 +34,3 @@ module "rds_postgres" {
   subnet_ids           = ["subnet-98d566f3", "subnet-bce40dc1"]
   security_group_id = module.sg_backend.security_group_id
 }
-
