@@ -86,7 +86,7 @@ terraform apply
 
 Al finalizar, se mostrarán las IPs públicas del backend y frontend.
 
-## 🚀 Despliegue automático
+## 🚀 Despliegue automático - user_data_frontend
 
 Una vez que Terraform crea la instancia EC2, el **servidor frontend se levanta automáticamente** sin necesidad de conexión manual, gracias al siguiente `user_data_frontend`:
 
