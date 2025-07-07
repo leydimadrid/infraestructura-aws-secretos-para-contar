@@ -34,26 +34,6 @@ infraestructura-aws-secretos-para-contar/
 ├── README.md            
 └── .gitignore
 
-```
-### 🔐 Módulo Security Group
-
-Este módulo crea un Security Group reutilizable para EC2. Recibe una lista de puertos y los habilita como entrada (ingress) en la VPC por defecto.
-
-- **Parámetro:** `puertos` (lista de números), por ejemplo: `[22, 3000, 5173]`  
-- **Output:** `security_group_id`, usado por los módulos EC2
-
-**Ejemplo de uso:**
-
-```hcl
-module "sg_frontend" {
-  source  = "./modules/security_group"
-  puertos = [22, 5173, 3000]
-}
-
-module "sg_backend" {
-  source  = "./modules/security_group"
-  puertos = [22, 5000]
-}
 
 ```
 ## 🚀 Despliegue rápido
@@ -85,6 +65,27 @@ terraform apply
 ```
 
 Al finalizar, se mostrarán las IPs públicas del backend y frontend.
+
+### 🔐 Módulo Security Group
+
+Este módulo crea un Security Group reutilizable para EC2. Recibe una lista de puertos y los habilita como entrada (ingress) en la VPC por defecto.
+
+- **Parámetro:** `puertos` (lista de números), por ejemplo: `[22, 3000, 5173]`  
+- **Output:** `security_group_id`, usado por los módulos EC2
+
+**Ejemplo de uso:**
+
+```hcl
+module "sg_frontend" {
+  source  = "./modules/security_group"
+  puertos = [22, 5173, 3000]
+}
+
+module "sg_backend" {
+  source  = "./modules/security_group"
+  puertos = [22, 5000]
+}
+
 
 ## 🚀 Despliegue automático - user_data_frontend
 
