@@ -86,6 +86,7 @@ module "sg_backend" {
   puertos = [22, 5000]
 }
 
+```
 
 ## 🚀 Despliegue automático - user_data_frontend
 
