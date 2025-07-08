@@ -15,11 +15,13 @@ module "ec2_backend_instance" {
   
 module "sg_frontend" {
   source  = "./modules/security_group"
+  vpc_id  = var.vpc_id
   puertos = [22, 5173, 3000]
 }
 
 module "sg_backend" {
   source  = "./modules/security_group"
+  vpc_id  = var.vpc_id
   puertos = [22, 5000, 5432]
 }
 

@@ -1,11 +1,6 @@
-data "aws_vpc" "default" {
-  default = true
-}
-
-
 resource "aws_security_group" "security_group" {
   description = "Security Group parametrizable"
-  vpc_id      = data.aws_vpc.default.id
+  vpc_id      = var.vpc_id
 
   dynamic "ingress" {
     for_each = var.puertos
@@ -28,6 +23,6 @@ resource "aws_security_group" "security_group" {
   }
 
   tags = {
-    Name = "custom_sg"
+    Name = "sg-cloud3"
   }
 }
