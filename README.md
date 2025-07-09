@@ -36,7 +36,7 @@ infraestructura-aws-secretos-para-contar/
 ├── outputs.tf
 ├── terraform.tf
 ├── terraform.tfvars
-├── README.md            
+├── README.md
 └── .gitignore
 
 

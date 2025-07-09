@@ -25,8 +25,6 @@ git clone https://github.com/leydimadrid/secretos-para-contar.git /home/ec2-user
 chown -R ec2-user:ec2-user /home/ec2-user/repo
 chmod -R u+rwX /home/ec2-user/repo
 
-# Instalar dotnet-ef para migraciones
-/home/ec2-user/dotnet/dotnet tool install --global dotnet-ef
 echo 'export PATH="$PATH:/home/ec2-user/.dotnet/tools"' >> /home/ec2-user/.bashrc
 export PATH=$PATH:/home/ec2-user/.dotnet/tools
 
