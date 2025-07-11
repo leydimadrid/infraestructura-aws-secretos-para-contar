@@ -71,7 +71,9 @@ terraform apply
 
 Al finalizar, se mostrarán las IPs públicas del backend y frontend.
 
-### 🔐 Módulo Security Group
+## 🔐 Módulo Security Group
+
+---
 
 Este módulo crea un Security Group reutilizable para EC2. Recibe una lista de puertos y los habilita como entrada (ingress) en la VPC por defecto.
 
