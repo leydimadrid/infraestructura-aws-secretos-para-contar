@@ -211,27 +211,6 @@ http://<IP_PUBLICA_EC2>:5000
 - Aplicación frontend disponible en la IP pública de su instancia EC2  
 - API backend accesible en su propia IP pública  
 - Conexión funcional entre frontend y backend (registro/login)  
-- Migraciones aplicadas automáticamente a PostgreSQL en el backend
-- 
----
-
-## 🧪 Tecnologías utilizadas
-
-| Tecnología        | Uso                                       |
-|------------------|-------------------------------------------|
-| Terraform         | Infraestructura como código               |
-| AWS EC2           | Máquina virtual para alojar la API        |
-| Amazon Linux 2023 | Sistema operativo base                    |
-| .NET 9 SDK        | Framework para ejecutar el backend        |
-| PostgreSQL        | Base de datos opcional/local              |
-
----
-
-## 📝 Funcionalidades del backend
-
-- **API RESTful** construida en **.NET 9**.
-- Permite operaciones CRUD sobre libros, autores y audiolibros.
-- Se conecta a una base de datos PostgreSQL (RDS).
 
 ---
 
