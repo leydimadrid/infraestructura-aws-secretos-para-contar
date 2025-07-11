@@ -226,7 +226,7 @@ Este script automatiza la configuración de la instancia:
    - Descarga y configura variables de entorno.
 
 3. **Inicializa y habilita PostgreSQL (opcional)**:
-   - Para entornos con base de datos local (alternativa a RDS).
+   -  se crea una base de dato RDS
 
 4. **Clona el repositorio**:
    ```bash
