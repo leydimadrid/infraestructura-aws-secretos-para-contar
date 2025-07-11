@@ -155,7 +155,7 @@ Se configura una instancia EC2 usando user_data_backend para:
 
 - Clonar automáticamente el repositorio:
  ```hcl
-https://github.com/leydimadrid/secretos-para-contar.
+https://github.com/leydimadrid/secretos-para-contar.git
 ```
 
 - Restaurar y compilar el proyecto ubicado en:
