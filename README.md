@@ -171,13 +171,15 @@ dotnet run --urls=http://0.0.0.0:5000.
 Esto expone la API desde la IP pública de la instancia EC2 por el puerto 5000.
 
 ##  RDS PostgreSQL
--Se crea una base de datos en RDS con PostgreSQL mediante Terraform.
--El endpoint de la base de datos es expuesto como output para ser referenciado por otros recursos o aplicaciones.
--Asegúrate de configurar correctamente las variables de entorno en el backend para conectarse al endpoint generado.
+- Se crea una base de datos en RDS con PostgreSQL mediante Terraform.
+- El endpoint de la base de datos es expuesto como output para ser referenciado por otros recursos o aplicaciones.
+- Asegúrate de configurar correctamente las variables de entorno en el backend para conectarse al endpoint generado.
 
 ## Pruebas
 Una vez desplegado, puedes probar la API accediendo a:
+```hcl
 http://<IP_PUBLICA_EC2>:5000
+```
 
 ## 📥 Repositorio
 
