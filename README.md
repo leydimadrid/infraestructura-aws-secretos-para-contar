@@ -181,6 +181,8 @@ Una vez desplegado, puedes probar la API accediendo a:
 http://<IP_PUBLICA_EC2>:5000
 ```
 
+<img width="1636" height="305" alt="image" src="https://github.com/user-attachments/assets/344899e2-21c7-4a26-bb59-e89ebcd65fd6" />
+
 ## 📥 Repositorio
 
 🔗 https://github.com/leydimadrid/secretos-para-contar
