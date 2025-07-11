@@ -203,6 +203,7 @@ http://<IP_PUBLICA_EC2>:5000
 - **.NET 7 + PostgreSQL** (Backend + Base de datos)  
 - **Amazon Linux 2023** (Base AMI)  
 - **Security Groups personalizados**
+- **AWS RDS (PostgreSQL) – Base de datos relacional desplegada y conectada al backend**
 
 
 ## 🧪 Funcionalidad esperada
